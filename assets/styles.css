@@ -4,10 +4,12 @@
   --white:#f3f3f0;
   --soft:#a8a8a3;
   --line:#30302e;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+  --serif:"Iowan Old Style","Songti TC","Noto Serif TC","PMingLiU",serif;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;background:var(--black)}
-body{margin:0;background:var(--black);color:var(--white);font-family:Arial,"Noto Sans TC",sans-serif}
+body{margin:0;background:var(--black);color:var(--white);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 a{color:inherit;text-decoration:none}
 .shell{width:min(1420px,calc(100% - 64px));margin:auto}
 .skip{position:fixed;top:-70px;left:14px;z-index:100;padding:12px 16px;background:#fff;color:#111}
@@ -18,20 +20,20 @@ header{position:sticky;top:0;z-index:50;height:78px;display:flex;align-items:cen
 .brand{position:absolute;left:50%;display:flex;align-items:center;transform:translateX(-50%);text-align:center}
 .brand i{display:none}
 .brand strong,.brand small{display:block;white-space:nowrap}
-.brand strong{font-size:14px;font-weight:600;letter-spacing:.22em}
-.brand small{margin-top:5px;color:var(--soft);font-size:8px;letter-spacing:.13em}
+.brand strong{font-size:15px;font-weight:600;letter-spacing:.16em}
+.brand small{margin-top:4px;color:var(--soft);font-size:9px;letter-spacing:.1em}
 .header-actions{display:flex;width:100%;align-items:center;justify-content:flex-end;gap:5px}
-nav{position:absolute;top:78px;right:32px;display:none;width:min(390px,calc(100vw - 32px));max-height:calc(100vh - 94px);padding:24px;background:#101010;border:1px solid var(--line);box-shadow:0 22px 50px rgba(0,0,0,.42);overflow:auto;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+nav{position:absolute;top:78px;right:32px;display:none;width:min(390px,calc(100vw - 32px));max-height:calc(100vh - 94px);padding:24px;background:#101010;border:1px solid var(--line);box-shadow:0 22px 50px rgba(0,0,0,.42);overflow:auto;font-size:13px;letter-spacing:.04em}
 .menu[aria-expanded=true]+nav{display:block}
 .nav-group{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px 18px;padding:16px 0;border-top:1px solid #292929}
 .nav-group:first-child{padding-top:0;border-top:0}
-.nav-group small{grid-column:1/-1;margin-bottom:7px;color:#696965;font-size:8px;letter-spacing:.2em}
+.nav-group small{grid-column:1/-1;margin-bottom:7px;color:#858580;font-size:10px;letter-spacing:.14em}
 nav a{position:relative;padding:9px 0;color:#c8c8c3}
 nav a::after{position:absolute;right:0;bottom:2px;left:0;height:1px;background:#fff;content:"";transform:scaleX(0);transition:transform .25s}
 nav a:hover{color:#fff}
 nav a:hover::after{transform:scaleX(1)}
 .view-switch{display:flex;padding:3px;border:1px solid var(--line);border-radius:999px;background:#171717}
-.view-switch button{display:flex;align-items:center;gap:5px;padding:6px 9px;border:0;border-radius:999px;background:transparent;color:#858580;cursor:pointer;font-size:10px}
+.view-switch button{display:flex;align-items:center;gap:5px;padding:6px 9px;border:0;border-radius:999px;background:transparent;color:#858580;cursor:pointer;font-size:12px}
 .view-switch button b{font-weight:500}
 .view-switch button[aria-pressed=true]{background:#f1f1ed;color:#111}
 .menu{display:block;padding:8px 0 8px 7px;border:0;background:none;color:#fff;cursor:pointer}
@@ -41,20 +43,20 @@ nav a:hover::after{transform:scaleX(1)}
 .hero{position:relative;min-height:510px;display:grid;place-items:center;overflow:hidden;background:var(--black);text-align:center}
 .hero>img,.shade{display:none}
 .hero-copy{position:relative;width:min(760px,calc(100% - 44px));margin:auto;padding:100px 0 80px}
-.hero-copy p,.heading p,.story p{margin:0 0 22px;color:#858580;font-size:9px;font-weight:600;letter-spacing:.28em}
-.hero-copy h1{margin:0;font:400 clamp(46px,6vw,78px)/1.16 Georgia,"Noto Serif TC",serif;letter-spacing:.01em}
-.hero-copy>span{display:block;max-width:620px;margin:28px auto 0;color:#aaa9a4;font:400 14px/1.9 Georgia,"Noto Serif TC",serif}
-.cta{display:inline-block;margin-top:32px;padding:12px 18px;border:1px solid #565653;color:#ddd;font-size:10px;letter-spacing:.18em;text-transform:uppercase;transition:.25s}
+.hero-copy p,.heading p,.story p{margin:0 0 20px;color:#92928d;font-size:11px;font-weight:600;letter-spacing:.2em}
+.hero-copy h1{margin:0;font:400 clamp(44px,6vw,76px)/1.2 var(--serif);letter-spacing:.01em}
+.hero-copy>span{display:block;max-width:620px;margin:26px auto 0;color:#b6b5b0;font:400 16px/1.9 var(--serif)}
+.cta{display:inline-block;margin-top:30px;padding:12px 20px;border:1px solid #565653;color:#e2e2de;font-size:12px;letter-spacing:.12em;transition:.25s}
 .cta:hover{border-color:#fff;background:#fff;color:#111}
 
 /* Large project-cover grid. */
 .gallery{width:100%;padding:0 32px 120px}
 .heading{display:flex;align-items:flex-end;justify-content:space-between;gap:28px;margin:0 auto 38px;padding-top:48px;border-top:1px solid var(--line)}
-.heading h2,.story h2{margin:0;font:400 clamp(32px,4vw,52px)/1.2 Georgia,"Noto Serif TC",serif}
+.heading h2,.story h2{margin:0;font:400 clamp(34px,4vw,54px)/1.25 var(--serif)}
 .filters{display:grid;gap:9px;justify-items:end}
 .filter-group{display:flex;align-items:center;justify-content:flex-end;gap:16px}
-.filter-label{min-width:34px;color:#555551;font-size:8px;letter-spacing:.2em}
-.filters button{position:relative;padding:8px 0;border:0;background:none;color:#777772;cursor:pointer;font-size:10px;letter-spacing:.1em;white-space:nowrap}
+.filter-label{min-width:38px;color:#858580;font-size:11px;font-weight:600;letter-spacing:.12em}
+.filters button{position:relative;padding:8px 0;border:0;background:none;color:#8b8b86;cursor:pointer;font-family:var(--sans);font-size:13px;letter-spacing:.03em;white-space:nowrap}
 .filters button::after{position:absolute;right:0;bottom:2px;left:0;height:1px;background:#eee;content:"";transform:scaleX(0);transition:.25s}
 .filters button.active{color:#eee}
 .filters button.active::after{transform:scaleX(1)}
@@ -71,23 +73,23 @@ nav a:hover::after{transform:scaleX(1)}
 .meta{display:flex;min-width:0;justify-content:space-between;gap:16px;padding-top:16px}
 .meta span{min-width:0}
 .meta strong,.meta small{display:block}
-.meta strong{overflow-wrap:anywhere;font-size:13px;font-weight:500;letter-spacing:.06em}
-.meta small,.meta em{margin-top:7px;color:#73736f;font-size:9px;font-style:normal;letter-spacing:.08em}
+.meta strong{overflow-wrap:anywhere;font-family:var(--serif);font-size:17px;font-weight:500;line-height:1.45;letter-spacing:.02em}
+.meta small,.meta em{margin-top:6px;color:#8a8a85;font-size:12px;font-style:normal;letter-spacing:.03em}
 
 .story{border-top:1px solid var(--line);background:var(--black)}
 .story>.shell{display:grid;grid-template-columns:.85fr 1.15fr;gap:80px;padding:110px 0}
 .story h2{font-size:clamp(34px,4vw,58px)}
-.story blockquote{margin:40px 0 0;color:#979792;font:400 clamp(19px,2vw,27px)/1.85 Georgia,"Noto Serif TC",serif}
+.story blockquote{margin:40px 0 0;color:#a9a9a4;font:400 clamp(20px,2vw,28px)/1.85 var(--serif)}
 footer{display:flex;align-items:flex-end;justify-content:space-between;padding:36px 0 48px;border-top:1px solid var(--line)}
 footer strong,footer small{display:block}
-footer strong{font-size:12px;letter-spacing:.16em}
-footer small,footer p{color:#666662;font-size:9px;letter-spacing:.08em}
+footer strong{font-size:14px;letter-spacing:.1em}
+footer small,footer p{color:#858580;font-size:11px;letter-spacing:.04em}
 
 dialog{width:min(1320px,calc(100% - 40px));max-width:none;padding:52px;border:0;background:#070707;color:#fff}
 dialog::backdrop{background:rgba(0,0,0,.95)}
 dialog>img{display:block;width:100%;max-height:76vh;object-fit:contain}
 dialog>div{padding-top:18px}
-dialog h2{margin:7px 0;font:400 25px Georgia,"Noto Serif TC",serif}
+dialog h2{margin:7px 0;font:400 27px var(--serif)}
 dialog small,dialog p{color:#858580}
 .close{position:absolute;right:14px;top:10px;border:0;background:none;color:#fff;cursor:pointer;font-size:30px;font-weight:200}
 .empty{text-align:center;color:#777;padding:60px 0}
@@ -97,38 +99,38 @@ dialog small,dialog p{color:#858580}
   body[data-view="desktop"]{min-width:1040px}
   body:not([data-view="desktop"]) header{height:68px;padding:0 14px;justify-content:flex-start}
   body:not([data-view="desktop"]) .brand{position:static;max-width:205px;transform:none;text-align:left}
-  body:not([data-view="desktop"]) .brand strong{font-size:12px}
-  body:not([data-view="desktop"]) .brand small{overflow:hidden;font-size:7px;letter-spacing:.08em;text-overflow:ellipsis}
+  body:not([data-view="desktop"]) .brand strong{font-size:13px;letter-spacing:.12em}
+  body:not([data-view="desktop"]) .brand small{overflow:hidden;font-size:8px;letter-spacing:.05em;text-overflow:ellipsis}
   body:not([data-view="desktop"]) .header-actions{width:auto;margin-left:auto;gap:4px}
   body:not([data-view="desktop"]) .view-switch button{padding:6px 8px}
   body:not([data-view="desktop"]) .view-switch button b{display:none}
   body:not([data-view="desktop"]) .menu{padding:7px 0 7px 5px}
-  body:not([data-view="desktop"]) nav{top:68px;right:0;left:0;width:100%;max-height:calc(100vh - 68px);padding:20px 18px 28px;border-width:0 0 1px;font-size:12px}
+  body:not([data-view="desktop"]) nav{top:68px;right:0;left:0;width:100%;max-height:calc(100vh - 68px);padding:20px 18px 28px;border-width:0 0 1px;font-size:14px}
   body:not([data-view="desktop"]) .nav-group{grid-template-columns:repeat(2,minmax(0,1fr))}
   body:not([data-view="desktop"]) nav a{padding:11px 0}
   body:not([data-view="desktop"]) .shell{width:calc(100% - 36px)}
   body:not([data-view="desktop"]) .hero{min-height:470px}
   body:not([data-view="desktop"]) .hero-copy{width:calc(100% - 36px);padding:84px 0 68px}
-  body:not([data-view="desktop"]) .hero-copy p{font-size:8px}
-  body:not([data-view="desktop"]) .hero-copy h1{font-size:42px}
-  body:not([data-view="desktop"]) .hero-copy>span{margin-top:22px;font-size:13px}
+  body:not([data-view="desktop"]) .hero-copy p{font-size:10px;letter-spacing:.14em}
+  body:not([data-view="desktop"]) .hero-copy h1{font-size:40px;line-height:1.25}
+  body:not([data-view="desktop"]) .hero-copy>span{margin-top:22px;font-size:15px;line-height:1.85}
   body:not([data-view="desktop"]) .gallery{padding:0 0 74px}
   body:not([data-view="desktop"]) .heading{align-items:flex-start;flex-direction:column;gap:22px;margin:0 18px 26px;padding-top:38px}
-  body:not([data-view="desktop"]) .heading h2{font-size:38px}
+  body:not([data-view="desktop"]) .heading h2{font-size:36px}
   body:not([data-view="desktop"]) .filters{width:100%;justify-items:stretch;gap:17px}
   body:not([data-view="desktop"]) .filter-group{justify-content:flex-start;flex-wrap:wrap;gap:4px 18px;padding-top:12px;border-top:1px solid #292929}
   body:not([data-view="desktop"]) .filter-group:first-child{padding-top:0;border-top:0}
-  body:not([data-view="desktop"]) .filter-label{flex:0 0 100%;margin-bottom:4px}
-  body:not([data-view="desktop"]) .filters button{font-size:10px}
+  body:not([data-view="desktop"]) .filter-label{flex:0 0 100%;margin-bottom:4px;font-size:11px}
+  body:not([data-view="desktop"]) .filters button{font-size:14px}
   body:not([data-view="desktop"]) .grid{grid-template-columns:minmax(0,1fr);gap:42px}
   body:not([data-view="desktop"]) .card,body:not([data-view="desktop"]) .card button,body:not([data-view="desktop"]) .meta,body:not([data-view="desktop"]) .meta span{min-width:0}
   body:not([data-view="desktop"]) .card figure{aspect-ratio:4/3}
   body:not([data-view="desktop"]) .card figure b{display:none}
   body:not([data-view="desktop"]) .meta{padding:14px 18px 0}
-  body:not([data-view="desktop"]) .meta strong{font-size:13px}
+  body:not([data-view="desktop"]) .meta strong{font-size:17px}
   body:not([data-view="desktop"]) .story>.shell{grid-template-columns:1fr;gap:22px;padding:74px 0}
-  body:not([data-view="desktop"]) .story h2{font-size:38px}
-  body:not([data-view="desktop"]) .story blockquote{margin:0;font-size:18px}
+  body:not([data-view="desktop"]) .story h2{font-size:35px}
+  body:not([data-view="desktop"]) .story blockquote{margin:0;font-size:19px}
   body:not([data-view="desktop"]) footer{align-items:flex-start;flex-direction:column;gap:14px;padding:30px 0 40px}
   body:not([data-view="desktop"]) dialog{width:100%;height:100%;max-height:none;margin:0;padding:50px 14px 22px}
   body:not([data-view="desktop"]) dialog>img{max-height:72vh}
@@ -139,8 +141,8 @@ dialog small,dialog p{color:#858580}
   body[data-view="mobile"]{width:430px;min-height:100vh;margin:auto;box-shadow:0 0 50px #000}
   body[data-view="mobile"] header{height:68px;padding:0 14px;justify-content:flex-start}
   body[data-view="mobile"] .brand{position:static;max-width:205px;transform:none;text-align:left}
-  body[data-view="mobile"] .brand strong{font-size:12px}
-  body[data-view="mobile"] .brand small{overflow:hidden;font-size:7px;text-overflow:ellipsis}
+  body[data-view="mobile"] .brand strong{font-size:13px}
+  body[data-view="mobile"] .brand small{overflow:hidden;font-size:8px;text-overflow:ellipsis}
   body[data-view="mobile"] .header-actions{width:auto;margin-left:auto;gap:4px}
   body[data-view="mobile"] .view-switch button{padding:6px 8px}
   body[data-view="mobile"] .view-switch button b{display:none}
@@ -150,7 +152,7 @@ dialog small,dialog p{color:#858580}
   body[data-view="mobile"] .shell{width:calc(100% - 36px)}
   body[data-view="mobile"] .hero{min-height:540px}
   body[data-view="mobile"] .hero-copy{width:calc(100% - 36px)}
-  body[data-view="mobile"] .hero-copy h1{font-size:44px}
+  body[data-view="mobile"] .hero-copy h1{font-size:40px}
   body[data-view="mobile"] .gallery{padding:0 0 74px}
   body[data-view="mobile"] .heading{align-items:flex-start;flex-direction:column;gap:22px;margin:0 18px 26px;padding-top:38px}
   body[data-view="mobile"] .filters{width:100%;justify-items:stretch;gap:17px}
@@ -161,6 +163,6 @@ dialog small,dialog p{color:#858580}
   body[data-view="mobile"] .card figure{aspect-ratio:4/3}
   body[data-view="mobile"] .meta{padding-right:18px;padding-left:18px}
   body[data-view="mobile"] .story>.shell{grid-template-columns:1fr;gap:22px;padding:74px 0}
-  body[data-view="mobile"] .story blockquote{margin:0;font-size:18px}
+  body[data-view="mobile"] .story blockquote{margin:0;font-size:19px}
   body[data-view="mobile"] footer{align-items:flex-start;flex-direction:column;gap:14px}
 }
