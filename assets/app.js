@@ -1,11 +1,14 @@
 const state={data:null,filter:"all"};
 const esc=s=>String(s??"").replace(/[&<>'\"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;",'\"':"&quot;"}[c]));
+const viewport=document.querySelector('meta[name="viewport"]');
+const narrowDevice=window.screen.width<=760;
 
 function preferredView(){
   const saved=localStorage.getItem('bird-photo-view');
   return saved==='mobile'||saved==='desktop'?saved:(matchMedia('(max-width:760px)').matches?'mobile':'desktop');
 }
 function setView(view,persist=false){
+  viewport.setAttribute('content',view==='desktop'&&narrowDevice?'width=1040':'width=device-width,initial-scale=1');
   document.body.dataset.view=view;
   document.querySelectorAll('.view-switch button').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.view===view)));
   if(persist)localStorage.setItem('bird-photo-view',view);
