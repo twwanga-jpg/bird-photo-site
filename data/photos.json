@@ -4,7 +4,7 @@
     "owner": "王天文",
     "intro": "記錄鳥類的眼神、動作與棲地，也保留每一次等待帶來的寧靜。"
   },
-  "updatedAt": "2026-07-20T11:11:32.455Z",
+  "updatedAt": "2026-07-20T11:16:38.273Z",
   "photos": [
     {
       "id": "48b14cbd82f8ee",
@@ -15,6 +15,36 @@
       "location": "董寨",
       "alt": "美麗倒影正面，白綬帶，董寨",
       "featured": true
+    },
+    {
+      "id": "2468b593c5e755",
+      "category": "flight",
+      "src": "photos/flight-2468b593c5e755.jpg",
+      "title": "IMG_1867",
+      "species": "",
+      "location": "",
+      "alt": "IMG_1867",
+      "featured": false
+    },
+    {
+      "id": "521f838df6cb06",
+      "category": "flight",
+      "src": "photos/flight-521f838df6cb06.jpg",
+      "title": "07月_長尾闊嘴鳥",
+      "species": "",
+      "location": "",
+      "alt": "07月_長尾闊嘴鳥",
+      "featured": false
+    },
+    {
+      "id": "71a6efd5c6cf81",
+      "category": "flight",
+      "src": "photos/flight-71a6efd5c6cf81.jpg",
+      "title": "06月_銀胸絲冠鳥",
+      "species": "",
+      "location": "",
+      "alt": "06月_銀胸絲冠鳥",
+      "featured": false
     },
     {
       "id": "e56a29bcde5e5f",
