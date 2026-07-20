@@ -1,1 +1,144 @@
-:root{--ink:#17251f;--moss:#486451;--paper:#f6f5ef;--muted:#69766f}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,"Noto Sans TC",sans-serif}.shell{width:min(1180px,calc(100% - 44px));margin:auto}a{color:inherit;text-decoration:none}.skip{position:fixed;top:-70px;left:12px;z-index:99;padding:12px;background:#fff}.skip:focus{top:12px}header{position:sticky;top:0;z-index:50;height:74px;display:flex;align-items:center;justify-content:space-between;padding:0 max(22px,calc((100vw - 1180px)/2));background:rgba(246,245,239,.95);backdrop-filter:blur(14px);border-bottom:1px solid #dfe3dd}.brand{display:flex;align-items:center;gap:10px}.brand i{display:grid;width:38px;height:38px;place-items:center;border:1px solid #93a196;border-radius:50%;font:29px Georgia;transform:rotate(-12deg)}.brand strong,.brand small{display:block}.brand strong{font:600 18px Georgia,"Noto Serif TC",serif;letter-spacing:.1em}.brand small{margin-top:3px;color:var(--muted);font-size:8px;letter-spacing:.18em}nav{display:flex;gap:26px;font-size:12px}.menu{display:none;border:0;background:none}.menu b{display:block;width:22px;height:1px;margin:6px;background:var(--ink)}.hero{position:relative;min-height:calc(100vh - 74px);display:flex;align-items:flex-end;overflow:hidden;background:#263c30;color:#fff}.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,18,11,.82),rgba(6,18,11,.08) 74%),linear-gradient(0deg,rgba(6,18,11,.48),transparent 55%)}.hero-copy{position:relative;z-index:2;width:min(1180px,calc(100% - 44px));margin:auto;padding:90px 0}.hero-copy p,.heading p,.story p{margin:0 0 18px;color:#d8e2db;font-size:10px;font-weight:bold;letter-spacing:.22em}.hero-copy h1{margin:0;font:500 clamp(48px,7vw,88px)/1.16 Georgia,"Noto Serif TC",serif}.hero-copy>span{display:block;max-width:570px;margin:24px 0;color:#e1e7e2;line-height:1.8}.cta{display:inline-block;margin-top:8px;padding:15px 24px;background:#f5f2e8;color:var(--ink);font-size:13px;font-weight:bold}.gallery{padding:100px 0}.heading{display:flex;align-items:flex-end;justify-content:space-between;gap:28px;margin-bottom:42px}.heading p{color:var(--moss)}.heading h2,.story h2{margin:0;font:500 clamp(40px,5vw,60px)/1.2 Georgia,"Noto Serif TC",serif}.filters{display:flex;flex-wrap:wrap;gap:16px}.filters button{padding:7px 0;border:0;border-bottom:1px solid transparent;background:none;color:var(--muted);cursor:pointer;font-size:12px}.filters button.active{border-bottom-color:var(--moss);color:var(--ink)}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:52px 28px}.card button{width:100%;padding:0;border:0;background:none;cursor:zoom-in;text-align:left}.card figure{position:relative;margin:0;overflow:hidden;aspect-ratio:3/2;background:#dce2dc}.card figure img{width:100%;height:100%;object-fit:cover;transition:transform .4s}.card button:hover img{transform:scale(1.035)}.card figure b{position:absolute;right:12px;bottom:12px;display:grid;width:38px;height:38px;place-items:center;border-radius:50%;background:#fff;opacity:0;transition:.2s}.card button:hover b{opacity:1}.meta{display:flex;justify-content:space-between;gap:16px;padding-top:15px}.meta strong,.meta small{display:block}.meta strong{font:500 20px Georgia,"Noto Serif TC",serif}.meta small,.meta em{margin-top:6px;color:var(--muted);font-size:10px;font-style:normal}.story{background:#e7ebe3}.story>.shell{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;padding:100px 0}.story p{color:var(--moss)}.story blockquote{margin:45px 0 0;color:#526159;font:500 clamp(20px,2.2vw,28px)/1.85 Georgia,"Noto Serif TC",serif}footer{display:flex;align-items:flex-end;justify-content:space-between;padding:42px 0}footer strong,footer small{display:block}footer strong{font:20px Georgia,"Noto Serif TC",serif}footer small,footer p{color:var(--muted);font-size:10px}dialog{width:min(1120px,calc(100% - 34px));max-width:none;padding:55px;border:0;background:#0b130e;color:#fff}dialog::backdrop{background:rgba(5,10,7,.94)}dialog>img{display:block;width:100%;max-height:72vh;object-fit:contain}dialog>div{padding-top:18px}dialog h2{margin:8px 0;font:500 30px Georgia,"Noto Serif TC",serif}.close{position:absolute;right:12px;top:10px;border:0;background:none;color:#fff;font-size:30px;cursor:pointer}.empty{text-align:center;color:var(--muted);padding:50px 0}@media(max-width:760px){header{height:66px;padding:0 14px}.menu{display:block}nav{position:absolute;top:66px;left:0;right:0;display:none;padding:22px;background:var(--paper);flex-direction:column}.menu[aria-expanded=true]+nav{display:flex}.hero{min-height:670px}.hero-copy{width:calc(100% - 28px);padding:70px 0}.hero-copy h1{font-size:44px}.heading{align-items:flex-start;flex-direction:column}.grid{grid-template-columns:1fr}.story>.shell{grid-template-columns:1fr;gap:10px}.story blockquote{margin-top:18px}footer{align-items:flex-start;flex-direction:column;gap:15px}}
+:root{--ink:#17251f;--moss:#486451;--paper:#f6f5ef;--muted:#69766f;--line:#dfe3dd}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,"Noto Sans TC",sans-serif}
+.shell{width:min(1180px,calc(100% - 44px));margin:auto}
+a{color:inherit;text-decoration:none}
+.skip{position:fixed;top:-70px;left:12px;z-index:99;padding:12px;background:#fff}
+.skip:focus{top:12px}
+header{position:sticky;top:0;z-index:50;height:74px;display:flex;align-items:center;justify-content:space-between;padding:0 max(22px,calc((100vw - 1180px)/2));background:rgba(246,245,239,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:10px;flex:none}
+.brand i{display:grid;width:38px;height:38px;place-items:center;border:1px solid #93a196;border-radius:50%;font:29px Georgia;transform:rotate(-12deg)}
+.brand strong,.brand small{display:block}
+.brand strong{font:600 18px Georgia,"Noto Serif TC",serif;letter-spacing:.1em}
+.brand small{margin-top:3px;color:var(--muted);font-size:8px;letter-spacing:.18em}
+.header-actions{display:flex;align-items:center;gap:22px}
+nav{display:flex;gap:26px;font-size:12px}
+.menu{display:none;border:0;background:none}
+.menu>b{display:block;width:22px;height:1px;margin:6px;background:var(--ink)}
+.view-switch{display:flex;padding:3px;border:1px solid #d5dcd5;border-radius:999px;background:#eef0eb}
+.view-switch button{display:flex;align-items:center;gap:5px;padding:6px 9px;border:0;border-radius:999px;background:transparent;color:var(--muted);cursor:pointer;font-size:11px}
+.view-switch button b{font-weight:500}
+.view-switch button[aria-pressed=true]{background:#fff;color:var(--ink);box-shadow:0 1px 4px rgba(23,37,31,.12)}
+.hero{position:relative;min-height:calc(100vh - 74px);display:flex;align-items:flex-end;overflow:hidden;background:#263c30;color:#fff}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,18,11,.82),rgba(6,18,11,.08) 74%),linear-gradient(0deg,rgba(6,18,11,.48),transparent 55%)}
+.hero-copy{position:relative;z-index:2;width:min(1180px,calc(100% - 44px));margin:auto;padding:90px 0}
+.hero-copy p,.heading p,.story p{margin:0 0 18px;color:#d8e2db;font-size:10px;font-weight:bold;letter-spacing:.22em}
+.hero-copy h1{margin:0;font:500 clamp(48px,7vw,88px)/1.16 Georgia,"Noto Serif TC",serif}
+.hero-copy>span{display:block;max-width:570px;margin:24px 0;color:#e1e7e2;line-height:1.8}
+.cta{display:inline-block;margin-top:8px;padding:15px 24px;background:#f5f2e8;color:var(--ink);font-size:13px;font-weight:bold}
+.gallery{padding:100px 0}
+.heading{display:flex;align-items:flex-end;justify-content:space-between;gap:28px;margin-bottom:42px}
+.heading p{color:var(--moss)}
+.heading h2,.story h2{margin:0;font:500 clamp(40px,5vw,60px)/1.2 Georgia,"Noto Serif TC",serif}
+.filters{display:flex;flex-wrap:wrap;gap:16px}
+.filters button{padding:7px 0;border:0;border-bottom:1px solid transparent;background:none;color:var(--muted);cursor:pointer;font-size:12px;white-space:nowrap}
+.filters button.active{border-bottom-color:var(--moss);color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:52px 28px}
+.card button{width:100%;padding:0;border:0;background:none;cursor:zoom-in;text-align:left;color:inherit}
+.card figure{position:relative;margin:0;overflow:hidden;aspect-ratio:3/2;background:#dce2dc}
+.card figure img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.card button:hover img{transform:scale(1.035)}
+.card figure b{position:absolute;right:12px;bottom:12px;display:grid;width:38px;height:38px;place-items:center;border-radius:50%;background:#fff;opacity:0;transition:.2s}
+.card button:hover figure b{opacity:1}
+.meta{display:flex;justify-content:space-between;gap:16px;padding-top:15px}
+.meta strong,.meta small{display:block}
+.meta strong{font:500 20px Georgia,"Noto Serif TC",serif}
+.meta small,.meta em{margin-top:6px;color:var(--muted);font-size:10px;font-style:normal}
+.story{background:#e7ebe3}
+.story>.shell{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;padding:100px 0}
+.story p{color:var(--moss)}
+.story blockquote{margin:45px 0 0;color:#526159;font:500 clamp(20px,2.2vw,28px)/1.85 Georgia,"Noto Serif TC",serif}
+footer{display:flex;align-items:flex-end;justify-content:space-between;padding:42px 0}
+footer strong,footer small{display:block}
+footer strong{font:20px Georgia,"Noto Serif TC",serif}
+footer small,footer p{color:var(--muted);font-size:10px}
+dialog{width:min(1120px,calc(100% - 34px));max-width:none;padding:55px;border:0;background:#0b130e;color:#fff}
+dialog::backdrop{background:rgba(5,10,7,.94)}
+dialog>img{display:block;width:100%;max-height:72vh;object-fit:contain}
+dialog>div{padding-top:18px}
+dialog h2{margin:8px 0;font:500 30px Georgia,"Noto Serif TC",serif}
+.close{position:absolute;right:12px;top:10px;border:0;background:none;color:#fff;font-size:30px;cursor:pointer}
+.empty{text-align:center;color:var(--muted);padding:50px 0}
+
+/* 手機版是獨立設計；小螢幕預設套用，也可用頁首按鈕手動切換。 */
+@media(max-width:760px){
+  body:not([data-view="desktop"]){--mobile:1}
+}
+body[data-view="mobile"]{--mobile:1}
+
+@media(max-width:760px){
+  body[data-view="desktop"]{min-width:1040px}
+}
+
+@media(max-width:760px){
+  body:not([data-view="desktop"]) header{height:64px;padding:0 16px}
+  body:not([data-view="desktop"]) .brand i{width:34px;height:34px;font-size:25px}
+  body:not([data-view="desktop"]) .brand strong{font-size:16px}
+  body:not([data-view="desktop"]) .brand small{font-size:7px}
+  body:not([data-view="desktop"]) .header-actions{gap:5px}
+  body:not([data-view="desktop"]) .view-switch button{padding:6px 8px}
+  body:not([data-view="desktop"]) .view-switch button b{display:none}
+  body:not([data-view="desktop"]) .menu{display:block;padding:7px 0 7px 7px}
+  body:not([data-view="desktop"]) nav{position:absolute;top:64px;left:0;right:0;display:none;padding:24px 20px 30px;background:var(--paper);border-bottom:1px solid var(--line);flex-direction:column;gap:0;font-size:15px;box-shadow:0 18px 30px rgba(23,37,31,.08)}
+  body:not([data-view="desktop"]) nav a{padding:13px 0;border-bottom:1px solid var(--line)}
+  body:not([data-view="desktop"]) .menu[aria-expanded=true]+nav{display:flex}
+  body:not([data-view="desktop"]) .shell{width:calc(100% - 32px)}
+  body:not([data-view="desktop"]) .hero{min-height:calc(82svh - 64px);align-items:flex-end}
+  body:not([data-view="desktop"]) .hero-copy{width:calc(100% - 32px);padding:52px 0}
+  body:not([data-view="desktop"]) .hero-copy p{margin-bottom:14px;font-size:8px}
+  body:not([data-view="desktop"]) .hero-copy h1{font-size:clamp(36px,11vw,48px);line-height:1.2}
+  body:not([data-view="desktop"]) .hero-copy>span{margin:18px 0;font-size:13px;line-height:1.7}
+  body:not([data-view="desktop"]) .cta{padding:13px 20px}
+  body:not([data-view="desktop"]) .gallery{width:100%;padding:58px 16px}
+  body:not([data-view="desktop"]) .heading{align-items:flex-start;flex-direction:column;gap:24px;margin-bottom:28px}
+  body:not([data-view="desktop"]) .heading p{margin-bottom:10px}
+  body:not([data-view="desktop"]) .heading h2{font-size:42px}
+  body:not([data-view="desktop"]) .filters{width:calc(100vw - 16px);margin-right:-16px;padding:0 16px 6px 0;flex-wrap:nowrap;gap:8px;overflow-x:auto;scrollbar-width:none}
+  body:not([data-view="desktop"]) .filters::-webkit-scrollbar{display:none}
+  body:not([data-view="desktop"]) .filters button{padding:9px 14px;border:1px solid #d8ded8;border-radius:999px;background:#eeefe9;font-size:13px}
+  body:not([data-view="desktop"]) .filters button.active{border-color:var(--moss);background:var(--moss);color:#fff}
+  body:not([data-view="desktop"]) .grid{grid-template-columns:1fr;gap:38px}
+  body:not([data-view="desktop"]) .card figure{aspect-ratio:4/3;border-radius:2px}
+  body:not([data-view="desktop"]) .card figure b{display:none}
+  body:not([data-view="desktop"]) .meta{align-items:flex-start;padding:14px 2px 0}
+  body:not([data-view="desktop"]) .meta strong{font-size:22px}
+  body:not([data-view="desktop"]) .meta small,body:not([data-view="desktop"]) .meta em{font-size:11px}
+  body:not([data-view="desktop"]) .story>.shell{grid-template-columns:1fr;gap:18px;padding:64px 0}
+  body:not([data-view="desktop"]) .story h2{font-size:38px}
+  body:not([data-view="desktop"]) .story blockquote{margin:0;font-size:18px;line-height:1.8}
+  body:not([data-view="desktop"]) footer{align-items:flex-start;flex-direction:column;gap:14px;padding:34px 0}
+  body:not([data-view="desktop"]) dialog{width:100%;height:100%;margin:0;padding:54px 16px 24px;max-height:none}
+  body:not([data-view="desktop"]) dialog>img{max-height:68vh}
+}
+
+/* 在電腦上選擇「手機」時，以手機畫布置中預覽。 */
+@media(min-width:761px){
+  body[data-view="mobile"]{width:430px;min-height:100vh;margin:auto;box-shadow:0 0 45px rgba(23,37,31,.18)}
+  body[data-view="mobile"] header{height:64px;padding:0 14px}
+  body[data-view="mobile"] .brand i{width:34px;height:34px;font-size:25px}
+  body[data-view="mobile"] .brand strong{font-size:16px}
+  body[data-view="mobile"] .brand small{font-size:7px}
+  body[data-view="mobile"] .header-actions{gap:5px}
+  body[data-view="mobile"] .view-switch button{padding:6px 8px}
+  body[data-view="mobile"] .view-switch button b{display:none}
+  body[data-view="mobile"] .menu{display:block;padding:7px 0 7px 7px}
+  body[data-view="mobile"] nav{position:absolute;top:64px;left:0;right:0;display:none;padding:24px 20px 30px;background:var(--paper);flex-direction:column;gap:0;font-size:15px}
+  body[data-view="mobile"] nav a{padding:13px 0;border-bottom:1px solid var(--line)}
+  body[data-view="mobile"] .menu[aria-expanded=true]+nav{display:flex}
+  body[data-view="mobile"] .shell{width:calc(100% - 32px)}
+  body[data-view="mobile"] .hero{min-height:720px}
+  body[data-view="mobile"] .hero-copy{width:calc(100% - 32px);padding:52px 0}
+  body[data-view="mobile"] .hero-copy h1{font-size:44px}
+  body[data-view="mobile"] .gallery{width:100%;padding:58px 16px}
+  body[data-view="mobile"] .heading{align-items:flex-start;flex-direction:column;gap:24px;margin-bottom:28px}
+  body[data-view="mobile"] .filters{width:100%;flex-wrap:nowrap;gap:8px;overflow-x:auto}
+  body[data-view="mobile"] .filters button{padding:9px 14px;border:1px solid #d8ded8;border-radius:999px;background:#eeefe9;font-size:13px}
+  body[data-view="mobile"] .filters button.active{border-color:var(--moss);background:var(--moss);color:#fff}
+  body[data-view="mobile"] .grid{grid-template-columns:1fr;gap:38px}
+  body[data-view="mobile"] .card figure{aspect-ratio:4/3}
+  body[data-view="mobile"] .story>.shell{grid-template-columns:1fr;gap:18px;padding:64px 0}
+  body[data-view="mobile"] .story blockquote{margin:0;font-size:18px}
+  body[data-view="mobile"] footer{align-items:flex-start;flex-direction:column;gap:14px}
+}
