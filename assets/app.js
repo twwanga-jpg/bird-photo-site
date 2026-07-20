@@ -29,10 +29,11 @@ document.querySelector('.menu').addEventListener('click',e=>e.currentTarget.setA
 document.querySelectorAll('nav a').forEach(link=>link.addEventListener('click',event=>{
   event.preventDefault();
   document.querySelector('.menu').setAttribute('aria-expanded','false');
+  const directFilter=link.dataset.filter;
   const target=link.getAttribute('href').slice(1);
   const category={gallery:'all',flight:'flight',raptors:'raptors',wetlands:'wetlands'}[target];
-  if(category){
-    applyFilter(category);
+  if(directFilter||category){
+    applyFilter(directFilter||category);
     document.getElementById('gallery').scrollIntoView({behavior:'smooth',block:'start'});
   }else{
     document.getElementById('home').scrollIntoView({behavior:'smooth',block:'start'});
