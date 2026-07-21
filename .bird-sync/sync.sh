@@ -8,6 +8,8 @@ LOG_DIR="$HOME/Library/Logs/BirdPhotoSync"
 LOG_FILE="$LOG_DIR/sync.log"
 LOCK_DIR="$LOG_DIR/sync.lock"
 MANIFEST="$LOG_DIR/manifest.tsv"
+DESIRED="$LOG_DIR/desired-files.txt"
+MANIFEST_HASH_FILE="$SYNC_DIR/manifest.sha256"
 
 mkdir -p "$LOG_DIR" "$SITE_ROOT/photos" "$SITE_ROOT/data"
 exec >>"$LOG_FILE" 2>&1
@@ -29,9 +31,28 @@ fi
   exit 1
 }
 
-# 只清除網站內由同步程式產生的照片副本，不碰 BirdWebPublish 原始照片。
-/usr/bin/find "$SITE_ROOT/photos" -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' -o -iname '*.webp' \) -delete
 : > "$MANIFEST"
+: > "$DESIRED"
+
+make_variant() {
+  local source="$1"
+  local stem="$2"
+  local size="$3"
+  local quality="$4"
+  local fallback_extension="$5"
+  local jpeg_name="${stem}-${size}.jpg"
+  local jpeg_path="$SITE_ROOT/photos/$jpeg_name"
+
+  if [ ! -f "$jpeg_path" ]; then
+    if ! /usr/bin/sips -s format jpeg -s formatOptions "$quality" -Z "$size" "$source" --out "$jpeg_path" >/dev/null 2>&1; then
+      local fallback_name="${stem}-${size}.${fallback_extension}"
+      /bin/cp "$source" "$SITE_ROOT/photos/$fallback_name"
+      printf '%s\n' "$fallback_name"
+      return
+    fi
+  fi
+  printf '%s\n' "$jpeg_name"
+}
 
 while IFS= read -r -d '' file; do
   relative="${file#$PHOTO_ROOT/}"
@@ -62,14 +83,37 @@ while IFS= read -r -d '' file; do
   # 檔名只用作作品標題；舊有 __ 欄位不再決定分類。
   title="${base%%__*}"
   id="$(/usr/bin/shasum -a 256 "$file" | /usr/bin/awk '{print substr($1,1,14)}')"
-  output_name="${category}-${id}.${extension}"
-  /bin/cp "$file" "$SITE_ROOT/photos/$output_name"
-  printf '%s\t%s\t%s\t%s\t%s\t%s\n' "$id" "$category" "photos/$output_name" "$title" "$species" "$location" >> "$MANIFEST"
+  stem="${category}-${id}"
+  small_name="$(make_variant "$file" "$stem" 640 78 "$extension")"
+  medium_name="$(make_variant "$file" "$stem" 1400 82 "$extension")"
+  large_name="$(make_variant "$file" "$stem" 2400 86 "$extension")"
+  printf '%s\n%s\n%s\n' "$small_name" "$medium_name" "$large_name" >> "$DESIRED"
+  printf '%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n' "$id" "$category" "photos/$small_name" "photos/$medium_name" "photos/$large_name" "$title" "$species" "$location" >> "$MANIFEST"
 done < <(/usr/bin/find "$PHOTO_ROOT" -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' -o -iname '*.webp' \) -print0)
+
+# 清除已從 BirdWebPublish 移除或換版的網站副本，原始照片不受影響。
+while IFS= read -r -d '' generated; do
+  generated_name="${generated##*/}"
+  if ! /usr/bin/grep -Fqx "$generated_name" "$DESIRED"; then
+    /bin/rm -f "$generated"
+  fi
+done < <(/usr/bin/find "$SITE_ROOT/photos" -type f -print0)
+
+new_manifest_hash="$(/usr/bin/shasum -a 256 "$MANIFEST" | /usr/bin/awk '{print $1}')"
+old_manifest_hash=""
+if [ -f "$MANIFEST_HASH_FILE" ]; then
+  old_manifest_hash="$(/bin/cat "$MANIFEST_HASH_FILE")"
+fi
+
+if [ "$new_manifest_hash" = "$old_manifest_hash" ] && [ -f "$SITE_ROOT/data/photos.json" ]; then
+  echo "照片與資料夾分類沒有變更，不重複發布"
+  exit 0
+fi
+printf '%s\n' "$new_manifest_hash" > "$MANIFEST_HASH_FILE"
 
 /usr/bin/osascript -l JavaScript "$SYNC_DIR/build-catalog.js" "$MANIFEST" "$SYNC_DIR/site-config.json" "$SITE_ROOT/data/photos.json"
 
-/usr/bin/git -C "$SITE_ROOT" add index.html assets data photos .bird-sync/site-config.json .bird-sync/build-catalog.js .bird-sync/sync.sh
+/usr/bin/git -C "$SITE_ROOT" add index.html assets data photos .bird-sync/site-config.json .bird-sync/build-catalog.js .bird-sync/sync.sh .bird-sync/manifest.sha256
 if /usr/bin/git -C "$SITE_ROOT" diff --cached --quiet; then
   echo "網站內容沒有變更"
 else
