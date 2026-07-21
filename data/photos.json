@@ -4,7 +4,7 @@
     "owner": "王天文",
     "intro": "記錄鳥類的眼神、動作與棲地，也保留每一次等待帶來的寧靜。"
   },
-  "updatedAt": "2026-07-21T15:08:17.448Z",
+  "updatedAt": "2026-07-21T16:21:12.922Z",
   "photos": [
     {
       "id": "f6dbeae495ec9e",
@@ -15,6 +15,7 @@
       "title": "09月_灰澤鵟",
       "species": "",
       "location": "",
+      "year": "",
       "alt": "09月_灰澤鵟",
       "featured": true
     },
@@ -27,6 +28,7 @@
       "title": "10月_鵂鶹",
       "species": "",
       "location": "",
+      "year": "",
       "alt": "10月_鵂鶹",
       "featured": false
     },
@@ -39,6 +41,7 @@
       "title": "DSC04686-cloud-wonder-2x",
       "species": "",
       "location": "",
+      "year": "",
       "alt": "DSC04686-cloud-wonder-2x",
       "featured": false
     },
@@ -51,6 +54,7 @@
       "title": "11月_猛鴞",
       "species": "",
       "location": "",
+      "year": "",
       "alt": "11月_猛鴞",
       "featured": false
     },
@@ -63,6 +67,7 @@
       "title": "DSC06697-cloud-wonder 2-3.7x",
       "species": "遊隼",
       "location": "",
+      "year": "",
       "alt": "DSC06697-cloud-wonder 2-3.7x，遊隼",
       "featured": false
     },
@@ -75,6 +80,7 @@
       "title": "DSC07013-cloud-wonder-3.7x",
       "species": "遊隼",
       "location": "",
+      "year": "",
       "alt": "DSC07013-cloud-wonder-3.7x，遊隼",
       "featured": false
     },
@@ -87,6 +93,7 @@
       "title": "DSC09945-cloud-wonder 2-4x",
       "species": "魚鷹",
       "location": "",
+      "year": "",
       "alt": "DSC09945-cloud-wonder 2-4x，魚鷹",
       "featured": false
     },
@@ -99,6 +106,7 @@
       "title": "DSC06706-cloud-wonder-2x_1",
       "species": "魚鷹",
       "location": "",
+      "year": "",
       "alt": "DSC06706-cloud-wonder-2x_1，魚鷹",
       "featured": false
     },
@@ -111,6 +119,7 @@
       "title": "SJY01009-cloud-wonder-2.5x",
       "species": "",
       "location": "",
+      "year": "",
       "alt": "SJY01009-cloud-wonder-2.5x",
       "featured": false
     },
@@ -123,6 +132,7 @@
       "title": "狩獵歸來",
       "species": "",
       "location": "",
+      "year": "",
       "alt": "狩獵歸來",
       "featured": false
     },
@@ -135,6 +145,7 @@
       "title": "帶飛-黑翅鳶-台北市",
       "species": "",
       "location": "",
+      "year": "",
       "alt": "帶飛-黑翅鳶-台北市",
       "featured": false
     },
@@ -147,6 +158,7 @@
       "title": "SJY05120-cloud-wonder-1x",
       "species": "",
       "location": "",
+      "year": "",
       "alt": "SJY05120-cloud-wonder-1x",
       "featured": false
     },
@@ -159,6 +171,7 @@
       "title": "Gemini_Generated_Image_59yc6o59yc6o59yc",
       "species": "",
       "location": "",
+      "year": "",
       "alt": "Gemini_Generated_Image_59yc6o59yc6o59yc",
       "featured": false
     },
@@ -171,6 +184,7 @@
       "title": "DSC04647-cloud-wonder 3-2x",
       "species": "",
       "location": "",
+      "year": "",
       "alt": "DSC04647-cloud-wonder 3-2x",
       "featured": false
     },
@@ -183,6 +197,7 @@
       "title": "DSC04710-cloud-wonder-3x",
       "species": "",
       "location": "",
+      "year": "",
       "alt": "DSC04710-cloud-wonder-3x",
       "featured": false
     },
@@ -195,6 +210,7 @@
       "title": "美麗倒影正面",
       "species": "",
       "location": "",
+      "year": "",
       "alt": "美麗倒影正面",
       "featured": false
     },
@@ -207,6 +223,7 @@
       "title": "7BB6B479-D815-423F-BE6A-DB5F2FAFF872",
       "species": "",
       "location": "董寨",
+      "year": "",
       "alt": "7BB6B479-D815-423F-BE6A-DB5F2FAFF872，董寨",
       "featured": false
     },
@@ -219,6 +236,7 @@
       "title": "DSC03703-g",
       "species": "",
       "location": "董寨",
+      "year": "",
       "alt": "DSC03703-g，董寨",
       "featured": false
     },
@@ -231,6 +249,7 @@
       "title": "quality_restoration_20260706220345303",
       "species": "",
       "location": "董寨",
+      "year": "",
       "alt": "quality_restoration_20260706220345303，董寨",
       "featured": false
     },
@@ -243,6 +262,7 @@
       "title": "DSC02464-t-2",
       "species": "",
       "location": "董寨",
+      "year": "",
       "alt": "DSC02464-t-2，董寨",
       "featured": false
     },
@@ -255,6 +275,7 @@
       "title": "DSC00612_1",
       "species": "",
       "location": "董寨",
+      "year": "",
       "alt": "DSC00612_1，董寨",
       "featured": false
     },
@@ -267,6 +288,7 @@
       "title": "DSC09929-g-g",
       "species": "",
       "location": "董寨",
+      "year": "",
       "alt": "DSC09929-g-g，董寨",
       "featured": false
     },
@@ -279,6 +301,7 @@
       "title": "quality_restoration_20260706220159352",
       "species": "",
       "location": "董寨",
+      "year": "",
       "alt": "quality_restoration_20260706220159352，董寨",
       "featured": false
     },
@@ -291,6 +314,7 @@
       "title": "DSC02698",
       "species": "",
       "location": "董寨",
+      "year": "",
       "alt": "DSC02698，董寨",
       "featured": false
     },
@@ -303,6 +327,7 @@
       "title": "quality_restoration_20260706220628108",
       "species": "",
       "location": "董寨",
+      "year": "",
       "alt": "quality_restoration_20260706220628108，董寨",
       "featured": false
     },
@@ -315,6 +340,7 @@
       "title": "DSC04528",
       "species": "",
       "location": "董寨",
+      "year": "",
       "alt": "DSC04528，董寨",
       "featured": false
     },
@@ -327,6 +353,7 @@
       "title": "quality_restoration_20260706220456973",
       "species": "",
       "location": "董寨",
+      "year": "",
       "alt": "quality_restoration_20260706220456973，董寨",
       "featured": false
     },
@@ -339,6 +366,7 @@
       "title": "retouch_2026070622213800",
       "species": "",
       "location": "董寨",
+      "year": "",
       "alt": "retouch_2026070622213800，董寨",
       "featured": false
     },
@@ -351,6 +379,7 @@
       "title": "IMG_20260705_211712",
       "species": "",
       "location": "董寨",
+      "year": "",
       "alt": "IMG_20260705_211712，董寨",
       "featured": false
     },
@@ -363,6 +392,7 @@
       "title": "DSC05889-g",
       "species": "",
       "location": "董寨",
+      "year": "",
       "alt": "DSC05889-g，董寨",
       "featured": false
     },
@@ -375,6 +405,7 @@
       "title": "DSC09624-g-t",
       "species": "",
       "location": "董寨",
+      "year": "",
       "alt": "DSC09624-g-t，董寨",
       "featured": false
     },
@@ -387,6 +418,7 @@
       "title": "DSC07326-t",
       "species": "",
       "location": "董寨",
+      "year": "",
       "alt": "DSC07326-t，董寨",
       "featured": false
     },
@@ -399,6 +431,7 @@
       "title": "DSC08883",
       "species": "",
       "location": "董寨",
+      "year": "",
       "alt": "DSC08883，董寨",
       "featured": false
     },
@@ -411,6 +444,7 @@
       "title": "DSC05598-g",
       "species": "",
       "location": "董寨",
+      "year": "",
       "alt": "DSC05598-g，董寨",
       "featured": false
     },
@@ -423,6 +457,7 @@
       "title": "DSC01483-g",
       "species": "",
       "location": "董寨",
+      "year": "",
       "alt": "DSC01483-g，董寨",
       "featured": false
     },
@@ -435,6 +470,7 @@
       "title": "DSC01406-g",
       "species": "",
       "location": "董寨",
+      "year": "",
       "alt": "DSC01406-g，董寨",
       "featured": false
     },
@@ -447,6 +483,7 @@
       "title": "DSC09883-t_1",
       "species": "",
       "location": "董寨",
+      "year": "",
       "alt": "DSC09883-t_1，董寨",
       "featured": false
     },
@@ -459,6 +496,7 @@
       "title": "紅綬帶",
       "species": "",
       "location": "董寨",
+      "year": "",
       "alt": "紅綬帶，董寨",
       "featured": false
     },
@@ -471,6 +509,7 @@
       "title": "DSC03878_1",
       "species": "",
       "location": "董寨",
+      "year": "",
       "alt": "DSC03878_1，董寨",
       "featured": false
     },
@@ -483,6 +522,7 @@
       "title": "DSC08125-1",
       "species": "",
       "location": "董寨",
+      "year": "",
       "alt": "DSC08125-1，董寨",
       "featured": false
     },
@@ -495,6 +535,7 @@
       "title": "DSC00391",
       "species": "",
       "location": "董寨",
+      "year": "",
       "alt": "DSC00391，董寨",
       "featured": false
     },
@@ -507,6 +548,7 @@
       "title": "DSC02155",
       "species": "",
       "location": "董寨",
+      "year": "",
       "alt": "DSC02155，董寨",
       "featured": false
     },
@@ -519,6 +561,7 @@
       "title": "DSC03163-t",
       "species": "",
       "location": "董寨",
+      "year": "",
       "alt": "DSC03163-t，董寨",
       "featured": false
     },
@@ -531,6 +574,7 @@
       "title": "DSC09716",
       "species": "",
       "location": "董寨",
+      "year": "",
       "alt": "DSC09716，董寨",
       "featured": false
     },
@@ -543,6 +587,7 @@
       "title": "DSC06596",
       "species": "",
       "location": "董寨",
+      "year": "",
       "alt": "DSC06596，董寨",
       "featured": false
     },
@@ -555,6 +600,7 @@
       "title": "董寨-3",
       "species": "",
       "location": "董寨",
+      "year": "",
       "alt": "董寨-3，董寨",
       "featured": false
     },
@@ -567,6 +613,7 @@
       "title": "董寨-2",
       "species": "",
       "location": "董寨",
+      "year": "",
       "alt": "董寨-2，董寨",
       "featured": false
     },
@@ -579,6 +626,7 @@
       "title": "DSC07990-g",
       "species": "",
       "location": "董寨",
+      "year": "",
       "alt": "DSC07990-g，董寨",
       "featured": false
     },
@@ -591,6 +639,7 @@
       "title": "DSC07969_1-t",
       "species": "",
       "location": "董寨",
+      "year": "",
       "alt": "DSC07969_1-t，董寨",
       "featured": false
     },
@@ -603,6 +652,7 @@
       "title": "DSC06940_1-t",
       "species": "",
       "location": "董寨",
+      "year": "",
       "alt": "DSC06940_1-t，董寨",
       "featured": false
     },
@@ -615,6 +665,7 @@
       "title": "DSC06906-g",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC06906-g，泰國",
       "featured": false
     },
@@ -627,6 +678,7 @@
       "title": "DSC06200",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC06200，泰國",
       "featured": false
     },
@@ -639,6 +691,7 @@
       "title": "DSC00625-g-g",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC00625-g-g，泰國",
       "featured": false
     },
@@ -651,6 +704,7 @@
       "title": "DSC08764-t",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC08764-t，泰國",
       "featured": false
     },
@@ -663,6 +717,7 @@
       "title": "DSC04673-g拷貝",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC04673-g拷貝，泰國",
       "featured": false
     },
@@ -675,6 +730,7 @@
       "title": "DSC04072-g拷貝",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC04072-g拷貝，泰國",
       "featured": false
     },
@@ -687,6 +743,7 @@
       "title": "DSC00889_1-t拷貝",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC00889_1-t拷貝，泰國",
       "featured": false
     },
@@ -699,6 +756,7 @@
       "title": "IMG_1867",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "IMG_1867，泰國",
       "featured": false
     },
@@ -711,6 +769,7 @@
       "title": "DSC01884-t",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC01884-t，泰國",
       "featured": false
     },
@@ -723,6 +782,7 @@
       "title": "DSC08949-g",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC08949-g，泰國",
       "featured": false
     },
@@ -735,6 +795,7 @@
       "title": "DSC03828",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC03828，泰國",
       "featured": false
     },
@@ -747,6 +808,7 @@
       "title": "DSC09585拷貝",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC09585拷貝，泰國",
       "featured": false
     },
@@ -759,6 +821,7 @@
       "title": "DSC09761-g拷貝",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC09761-g拷貝，泰國",
       "featured": false
     },
@@ -771,6 +834,7 @@
       "title": "DSC07846_1",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC07846_1，泰國",
       "featured": false
     },
@@ -783,6 +847,7 @@
       "title": "DSC09756-g_1",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC09756-g_1，泰國",
       "featured": false
     },
@@ -795,6 +860,7 @@
       "title": "DSC08104",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC08104，泰國",
       "featured": false
     },
@@ -807,6 +873,7 @@
       "title": "DSC07197",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC07197，泰國",
       "featured": false
     },
@@ -819,6 +886,7 @@
       "title": "DSC09522-1-g拷貝",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC09522-1-g拷貝，泰國",
       "featured": false
     },
@@ -831,6 +899,7 @@
       "title": "DSC05949拷貝",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC05949拷貝，泰國",
       "featured": false
     },
@@ -843,6 +912,7 @@
       "title": "07月_長尾闊嘴鳥",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "07月_長尾闊嘴鳥，泰國",
       "featured": false
     },
@@ -855,6 +925,7 @@
       "title": "DSC09145-g拷貝",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC09145-g拷貝，泰國",
       "featured": false
     },
@@ -867,6 +938,7 @@
       "title": "DSC01165拷貝",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC01165拷貝，泰國",
       "featured": false
     },
@@ -879,6 +951,7 @@
       "title": "DSC01648拷貝",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC01648拷貝，泰國",
       "featured": false
     },
@@ -891,6 +964,7 @@
       "title": "DSC09761-g_1",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC09761-g_1，泰國",
       "featured": false
     },
@@ -903,6 +977,7 @@
       "title": "DSC01243-g拷貝",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC01243-g拷貝，泰國",
       "featured": false
     },
@@ -915,6 +990,7 @@
       "title": "DSC09495-g拷貝",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC09495-g拷貝，泰國",
       "featured": false
     },
@@ -927,6 +1003,7 @@
       "title": "DSC02373-t",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC02373-t，泰國",
       "featured": false
     },
@@ -939,6 +1016,7 @@
       "title": "DSC08964-t",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC08964-t，泰國",
       "featured": false
     },
@@ -951,6 +1029,7 @@
       "title": "DSC04235-t拷貝",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC04235-t拷貝，泰國",
       "featured": false
     },
@@ -963,6 +1042,7 @@
       "title": "DSC08681",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC08681，泰國",
       "featured": false
     },
@@ -975,6 +1055,7 @@
       "title": "DSC04943拷貝",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC04943拷貝，泰國",
       "featured": false
     },
@@ -987,6 +1068,7 @@
       "title": "DSC00391-g-3拷貝",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC00391-g-3拷貝，泰國",
       "featured": false
     },
@@ -999,6 +1081,7 @@
       "title": "06月_銀胸絲冠鳥",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "06月_銀胸絲冠鳥，泰國",
       "featured": false
     },
@@ -1011,6 +1094,7 @@
       "title": "DSC03750-2-t拷貝",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC03750-2-t拷貝，泰國",
       "featured": false
     },
@@ -1023,6 +1107,7 @@
       "title": "DSC05347拷貝",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC05347拷貝，泰國",
       "featured": false
     },
@@ -1035,6 +1120,7 @@
       "title": "DSC05207拷貝",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC05207拷貝，泰國",
       "featured": false
     },
@@ -1047,6 +1133,7 @@
       "title": "DSC05570",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC05570，泰國",
       "featured": false
     },
@@ -1059,6 +1146,7 @@
       "title": "DSC09014",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC09014，泰國",
       "featured": false
     },
@@ -1071,6 +1159,7 @@
       "title": "DSC09878-g拷貝",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC09878-g拷貝，泰國",
       "featured": false
     },
@@ -1083,6 +1172,7 @@
       "title": "DSC09018-1拷貝",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC09018-1拷貝，泰國",
       "featured": false
     },
@@ -1095,6 +1185,7 @@
       "title": "DSC09571-g拷貝",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC09571-g拷貝，泰國",
       "featured": false
     },
@@ -1107,6 +1198,7 @@
       "title": "DSC02020",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC02020，泰國",
       "featured": false
     },
@@ -1119,6 +1211,7 @@
       "title": "DSC09805-t拷貝",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC09805-t拷貝，泰國",
       "featured": false
     },
@@ -1131,6 +1224,7 @@
       "title": "DSC05821-g拷貝",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC05821-g拷貝，泰國",
       "featured": false
     },
@@ -1143,6 +1237,7 @@
       "title": "DSC05451拷貝",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC05451拷貝，泰國",
       "featured": false
     },
@@ -1155,6 +1250,7 @@
       "title": "DSC05224拷貝",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC05224拷貝，泰國",
       "featured": false
     },
@@ -1167,6 +1263,7 @@
       "title": "DSC05118拷貝",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC05118拷貝，泰國",
       "featured": false
     },
@@ -1179,6 +1276,7 @@
       "title": "DSC07868-g",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC07868-g，泰國",
       "featured": false
     },
@@ -1191,6 +1289,7 @@
       "title": "DSC07673",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC07673，泰國",
       "featured": false
     },
@@ -1203,6 +1302,7 @@
       "title": "DSC06025-g 拷貝",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC06025-g 拷貝，泰國",
       "featured": false
     },
@@ -1215,6 +1315,7 @@
       "title": "DSC09363-g拷貝",
       "species": "",
       "location": "泰國",
+      "year": "",
       "alt": "DSC09363-g拷貝，泰國",
       "featured": false
     },
@@ -1227,6 +1328,7 @@
       "title": "12月_雪鴞",
       "species": "",
       "location": "內蒙",
+      "year": "",
       "alt": "12月_雪鴞，內蒙",
       "featured": false
     },
@@ -1239,6 +1341,7 @@
       "title": "01月_雪鴞",
       "species": "",
       "location": "內蒙",
+      "year": "",
       "alt": "01月_雪鴞，內蒙",
       "featured": false
     },
@@ -1251,6 +1354,7 @@
       "title": "02月_長尾林鴞",
       "species": "",
       "location": "內蒙",
+      "year": "",
       "alt": "02月_長尾林鴞，內蒙",
       "featured": false
     },
@@ -1263,6 +1367,7 @@
       "title": "美麗倒影側面",
       "species": "",
       "location": "",
+      "year": "",
       "alt": "美麗倒影側面",
       "featured": false
     }
