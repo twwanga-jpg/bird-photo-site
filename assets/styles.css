@@ -124,7 +124,9 @@ dialog small,dialog p{color:#858580}
   body:not([data-view="desktop"]) .filters button{font-size:14px}
   body:not([data-view="desktop"]) .grid{grid-template-columns:minmax(0,1fr);gap:42px}
   body:not([data-view="desktop"]) .card,body:not([data-view="desktop"]) .card button,body:not([data-view="desktop"]) .meta,body:not([data-view="desktop"]) .meta span{min-width:0}
-  body:not([data-view="desktop"]) .card figure{aspect-ratio:4/3}
+  /* Keep each photo's native ratio on mobile so 2:3 portraits are never cropped. */
+  body:not([data-view="desktop"]) .card figure{aspect-ratio:auto}
+  body:not([data-view="desktop"]) .card figure img{width:100%;height:auto;object-fit:contain}
   body:not([data-view="desktop"]) .card figure b{display:none}
   body:not([data-view="desktop"]) .meta{padding:14px 18px 0}
   body:not([data-view="desktop"]) .meta strong{font-size:17px}
@@ -160,7 +162,8 @@ dialog small,dialog p{color:#858580}
   body[data-view="mobile"] .filter-group:first-child{padding-top:0;border-top:0}
   body[data-view="mobile"] .filter-label{flex:0 0 100%;margin-bottom:4px}
   body[data-view="mobile"] .grid{grid-template-columns:minmax(0,1fr);gap:42px}
-  body[data-view="mobile"] .card figure{aspect-ratio:4/3}
+  body[data-view="mobile"] .card figure{aspect-ratio:auto}
+  body[data-view="mobile"] .card figure img{width:100%;height:auto;object-fit:contain}
   body[data-view="mobile"] .meta{padding-right:18px;padding-left:18px}
   body[data-view="mobile"] .story>.shell{grid-template-columns:1fr;gap:22px;padding:74px 0}
   body[data-view="mobile"] .story blockquote{margin:0;font-size:19px}
