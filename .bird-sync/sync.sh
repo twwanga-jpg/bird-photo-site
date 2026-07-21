@@ -70,6 +70,7 @@ while IFS= read -r -d '' file; do
 
   species=""
   location=""
+  year=""
   IFS='/' read -r -a parts <<< "$directory"
   for ((i=0;i<${#parts[@]};i++)); do
     if [ "${parts[$i]}" = "地區" ] && [ $((i+1)) -lt ${#parts[@]} ]; then
@@ -77,6 +78,11 @@ while IFS= read -r -d '' file; do
     fi
     if [ "${parts[$i]}" = "鳥種" ] && [ $((i+1)) -lt ${#parts[@]} ]; then
       species="${parts[$((i+1))]}"
+    fi
+    if [ "${parts[$i]}" = "月曆" ] && [ $((i+1)) -lt ${#parts[@]} ]; then
+      case "${parts[$((i+1))]}" in
+        2023|2024|2025|2026) year="${parts[$((i+1))]}" ;;
+      esac
     fi
   done
 
@@ -88,7 +94,7 @@ while IFS= read -r -d '' file; do
   medium_name="$(make_variant "$file" "$stem" 1400 82 "$extension")"
   large_name="$(make_variant "$file" "$stem" 2400 86 "$extension")"
   printf '%s\n%s\n%s\n' "$small_name" "$medium_name" "$large_name" >> "$DESIRED"
-  printf '%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n' "$id" "$category" "photos/$small_name" "photos/$medium_name" "photos/$large_name" "$title" "$species" "$location" >> "$MANIFEST"
+  printf '%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n' "$id" "$category" "photos/$small_name" "photos/$medium_name" "photos/$large_name" "$title" "$species" "$location" "$year" >> "$MANIFEST"
 done < <(/usr/bin/find "$PHOTO_ROOT" -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' -o -iname '*.webp' \) -print0)
 
 # 清除已從 BirdWebPublish 移除或換版的網站副本，原始照片不受影響。
