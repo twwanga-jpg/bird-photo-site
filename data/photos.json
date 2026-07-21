@@ -4,7 +4,7 @@
     "owner": "王天文",
     "intro": "記錄鳥類的眼神、動作與棲地，也保留每一次等待帶來的寧靜。"
   },
-  "updatedAt": "2026-07-21T14:45:01.778Z",
+  "updatedAt": "2026-07-21T14:58:08.339Z",
   "photos": [
     {
       "id": "f6dbeae495ec9e",
@@ -304,18 +304,6 @@
       "species": "",
       "location": "董寨",
       "alt": "quality_restoration_20260706220628108，董寨",
-      "featured": false
-    },
-    {
-      "id": "a172c80a8e7b10",
-      "category": "flight",
-      "src": "photos/flight-a172c80a8e7b10-1400.jpg",
-      "small": "photos/flight-a172c80a8e7b10-640.jpg",
-      "large": "photos/flight-a172c80a8e7b10-2400.jpg",
-      "title": "IMG_20260623_161206",
-      "species": "",
-      "location": "董寨",
-      "alt": "IMG_20260623_161206，董寨",
       "featured": false
     },
     {
