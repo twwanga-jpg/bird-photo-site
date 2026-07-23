@@ -4,7 +4,7 @@
     "owner": "王天文",
     "intro": "記錄鳥類的眼神、動作與棲地，也保留每一次等待帶來的寧靜。"
   },
-  "updatedAt": "2026-07-23T16:00:57.144Z",
+  "updatedAt": "2026-07-23T16:07:23.852Z",
   "photos": [
     {
       "id": "f6dbeae495ec9e",
@@ -116,6 +116,34 @@
       "year": "",
       "filename": "DSC06706-cloud-wonder-2x_1.jpg",
       "alt": "DSC06706-cloud-wonder-2x_1，魚鷹",
+      "featured": false
+    },
+    {
+      "id": "2663e60a71557b",
+      "category": "raptors",
+      "src": "photos/raptors-2663e60a71557b-1400.jpg",
+      "small": "photos/raptors-2663e60a71557b-640.jpg",
+      "large": "photos/raptors-2663e60a71557b-2400.jpg",
+      "title": "DSC06789_1-DeNoiseAI-severe-noise-2",
+      "species": "魚鷹",
+      "location": "",
+      "year": "",
+      "filename": "DSC06789_1-DeNoiseAI-severe-noise-2.jpg",
+      "alt": "DSC06789_1-DeNoiseAI-severe-noise-2，魚鷹",
+      "featured": false
+    },
+    {
+      "id": "0a88618d87c122",
+      "category": "raptors",
+      "src": "photos/raptors-0a88618d87c122-1400.jpg",
+      "small": "photos/raptors-0a88618d87c122-640.jpg",
+      "large": "photos/raptors-0a88618d87c122-2400.jpg",
+      "title": "DSC06777-SharpenAI-Motion (1)",
+      "species": "魚鷹",
+      "location": "",
+      "year": "",
+      "filename": "DSC06777-SharpenAI-Motion (1).jpg",
+      "alt": "DSC06777-SharpenAI-Motion (1)，魚鷹",
       "featured": false
     },
     {
