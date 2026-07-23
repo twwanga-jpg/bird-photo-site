@@ -4,7 +4,7 @@
     "owner": "王天文",
     "intro": "記錄鳥類的眼神、動作與棲地，也保留每一次等待帶來的寧靜。"
   },
-  "updatedAt": "2026-07-23T16:07:23.852Z",
+  "updatedAt": "2026-07-23T16:12:35.743Z",
   "photos": [
     {
       "id": "f6dbeae495ec9e",
@@ -119,6 +119,34 @@
       "featured": false
     },
     {
+      "id": "82aa23ee9d9430",
+      "category": "raptors",
+      "src": "photos/raptors-82aa23ee9d9430-1400.jpg",
+      "small": "photos/raptors-82aa23ee9d9430-640.jpg",
+      "large": "photos/raptors-82aa23ee9d9430-2400.jpg",
+      "title": "DSC00432-DeNoiseAI-low-light",
+      "species": "魚鷹",
+      "location": "",
+      "year": "",
+      "filename": "DSC00432-DeNoiseAI-low-light.jpg",
+      "alt": "DSC00432-DeNoiseAI-low-light，魚鷹",
+      "featured": false
+    },
+    {
+      "id": "cae7792d3cb82d",
+      "category": "raptors",
+      "src": "photos/raptors-cae7792d3cb82d-1400.jpg",
+      "small": "photos/raptors-cae7792d3cb82d-640.jpg",
+      "large": "photos/raptors-cae7792d3cb82d-2400.jpg",
+      "title": "IMG_7279",
+      "species": "魚鷹",
+      "location": "",
+      "year": "",
+      "filename": "IMG_7279.jpg",
+      "alt": "IMG_7279，魚鷹",
+      "featured": false
+    },
+    {
       "id": "2663e60a71557b",
       "category": "raptors",
       "src": "photos/raptors-2663e60a71557b-1400.jpg",
@@ -144,6 +172,34 @@
       "year": "",
       "filename": "DSC06777-SharpenAI-Motion (1).jpg",
       "alt": "DSC06777-SharpenAI-Motion (1)，魚鷹",
+      "featured": false
+    },
+    {
+      "id": "7aa8436633ec7a",
+      "category": "raptors",
+      "src": "photos/raptors-7aa8436633ec7a-1400.jpg",
+      "small": "photos/raptors-7aa8436633ec7a-640.jpg",
+      "large": "photos/raptors-7aa8436633ec7a-2400.jpg",
+      "title": "DSC00028-2",
+      "species": "魚鷹",
+      "location": "",
+      "year": "",
+      "filename": "DSC00028-2.jpg",
+      "alt": "DSC00028-2，魚鷹",
+      "featured": false
+    },
+    {
+      "id": "8bfbed02aedf9a",
+      "category": "raptors",
+      "src": "photos/raptors-8bfbed02aedf9a-1400.jpg",
+      "small": "photos/raptors-8bfbed02aedf9a-640.jpg",
+      "large": "photos/raptors-8bfbed02aedf9a-2400.jpg",
+      "title": "IMG_8853-2",
+      "species": "魚鷹",
+      "location": "",
+      "year": "",
+      "filename": "IMG_8853-2.jpg",
+      "alt": "IMG_8853-2，魚鷹",
       "featured": false
     },
     {
