@@ -4,8 +4,22 @@
     "owner": "王天文",
     "intro": "記錄鳥類的眼神、動作與棲地，也保留每一次等待帶來的寧靜。"
   },
-  "updatedAt": "2026-07-26T08:57:32.290Z",
+  "updatedAt": "2026-07-26T10:03:18.233Z",
   "photos": [
+    {
+      "id": "5d1ebb5ea7655a",
+      "category": "raptors",
+      "src": "photos/raptors-5d1ebb5ea7655a-1400.jpg",
+      "small": "photos/raptors-5d1ebb5ea7655a-640.jpg",
+      "large": "photos/raptors-5d1ebb5ea7655a-2400.jpg",
+      "title": "DSC00358_1-SharpenAI-Softness",
+      "species": "",
+      "location": "",
+      "year": "",
+      "filename": "DSC00358_1-SharpenAI-Softness.jpg",
+      "alt": "DSC00358_1-SharpenAI-Softness",
+      "featured": true
+    },
     {
       "id": "f6dbeae495ec9e",
       "category": "raptors",
@@ -18,7 +32,7 @@
       "year": "",
       "filename": "09月_灰澤鵟.jpg",
       "alt": "09月_灰澤鵟",
-      "featured": true
+      "featured": false
     },
     {
       "id": "f32dead774eeb5",
@@ -32,6 +46,20 @@
       "year": "",
       "filename": "10月_鵂鶹.jpg",
       "alt": "10月_鵂鶹",
+      "featured": false
+    },
+    {
+      "id": "6984ec8a70878f",
+      "category": "raptors",
+      "src": "photos/raptors-6984ec8a70878f-1400.jpg",
+      "small": "photos/raptors-6984ec8a70878f-640.jpg",
+      "large": "photos/raptors-6984ec8a70878f-2400.jpg",
+      "title": "DSC02670-topaz-enhance-2x-exposure-color-2",
+      "species": "",
+      "location": "",
+      "year": "",
+      "filename": "DSC02670-topaz-enhance-2x-exposure-color-2.jpg",
+      "alt": "DSC02670-topaz-enhance-2x-exposure-color-2",
       "featured": false
     },
     {
