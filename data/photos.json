@@ -4,7 +4,7 @@
     "owner": "王天文",
     "intro": "記錄鳥類的眼神、動作與棲地，也保留每一次等待帶來的寧靜。"
   },
-  "updatedAt": "2026-07-26T08:31:12.973Z",
+  "updatedAt": "2026-07-26T08:57:32.290Z",
   "photos": [
     {
       "id": "f6dbeae495ec9e",
@@ -242,6 +242,20 @@
       "year": "",
       "filename": "SJY01009-cloud-wonder-2.5x.jpg",
       "alt": "SJY01009-cloud-wonder-2.5x",
+      "featured": false
+    },
+    {
+      "id": "66e4677fdecb46",
+      "category": "raptors",
+      "src": "photos/raptors-66e4677fdecb46-1400.jpg",
+      "small": "photos/raptors-66e4677fdecb46-640.jpg",
+      "large": "photos/raptors-66e4677fdecb46-2400.jpg",
+      "title": "DSC02303-green-shadow-removed-4K",
+      "species": "",
+      "location": "",
+      "year": "",
+      "filename": "DSC02303-green-shadow-removed-4K.jpg",
+      "alt": "DSC02303-green-shadow-removed-4K",
       "featured": false
     },
     {
