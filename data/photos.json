@@ -4,7 +4,7 @@
     "owner": "王天文",
     "intro": "記錄鳥類的眼神、動作與棲地，也保留每一次等待帶來的寧靜。"
   },
-  "updatedAt": "2026-07-26T14:31:13.992Z",
+  "updatedAt": "2026-07-26T14:36:35.353Z",
   "photos": [
     {
       "id": "5d1ebb5ea7655a",
@@ -399,17 +399,31 @@
       "featured": false
     },
     {
-      "id": "ad04d8364ee426",
+      "id": "83ccfc766f269c",
       "category": "wetlands",
-      "src": "photos/wetlands-ad04d8364ee426-1400.jpg",
-      "small": "photos/wetlands-ad04d8364ee426-640.jpg",
-      "large": "photos/wetlands-ad04d8364ee426-2400.jpg",
-      "title": "DSC04647-cloud-wonder 3-2x",
+      "src": "photos/wetlands-83ccfc766f269c-1400.jpg",
+      "small": "photos/wetlands-83ccfc766f269c-640.jpg",
+      "large": "photos/wetlands-83ccfc766f269c-2400.jpg",
+      "title": "DSC08837-2-t",
       "species": "",
       "location": "",
       "year": "",
-      "filename": "DSC04647-cloud-wonder 3-2x.jpg",
-      "alt": "DSC04647-cloud-wonder 3-2x",
+      "filename": "DSC08837-2-t.jpeg",
+      "alt": "DSC08837-2-t",
+      "featured": false
+    },
+    {
+      "id": "eab343cb7e3cfd",
+      "category": "wetlands",
+      "src": "photos/wetlands-eab343cb7e3cfd-1400.jpg",
+      "small": "photos/wetlands-eab343cb7e3cfd-640.jpg",
+      "large": "photos/wetlands-eab343cb7e3cfd-2400.jpg",
+      "title": "DSC04647-cloud-wonder 3-2x_1",
+      "species": "",
+      "location": "",
+      "year": "",
+      "filename": "DSC04647-cloud-wonder 3-2x_1.jpg",
+      "alt": "DSC04647-cloud-wonder 3-2x_1",
       "featured": false
     },
     {
