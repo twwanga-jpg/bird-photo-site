@@ -4,7 +4,7 @@
     "owner": "王天文",
     "intro": "記錄鳥類的眼神、動作與棲地，也保留每一次等待帶來的寧靜。"
   },
-  "updatedAt": "2026-07-26T14:20:33.987Z",
+  "updatedAt": "2026-07-26T14:25:53.300Z",
   "photos": [
     {
       "id": "5d1ebb5ea7655a",
@@ -329,6 +329,20 @@
       "featured": false
     },
     {
+      "id": "66c6e5a5b6f423",
+      "category": "raptors",
+      "src": "photos/raptors-66c6e5a5b6f423-1400.jpg",
+      "small": "photos/raptors-66c6e5a5b6f423-640.jpg",
+      "large": "photos/raptors-66c6e5a5b6f423-2400.jpg",
+      "title": "DSC08137_Original-Edit-2",
+      "species": "",
+      "location": "",
+      "year": "",
+      "filename": "DSC08137_Original-Edit-2.jpg",
+      "alt": "DSC08137_Original-Edit-2",
+      "featured": false
+    },
+    {
       "id": "1f4fa52435512c",
       "category": "raptors",
       "src": "photos/raptors-1f4fa52435512c-1400.jpg",
@@ -410,6 +424,20 @@
       "year": "",
       "filename": "美麗倒影正面__白綬帶__董寨.jpg",
       "alt": "美麗倒影正面",
+      "featured": false
+    },
+    {
+      "id": "589b8b7b1362c5",
+      "category": "flight",
+      "src": "photos/flight-589b8b7b1362c5-1400.jpg",
+      "small": "photos/flight-589b8b7b1362c5-640.jpg",
+      "large": "photos/flight-589b8b7b1362c5-2400.jpg",
+      "title": "40-王天文-文須鳥-0704-2",
+      "species": "",
+      "location": "",
+      "year": "",
+      "filename": "40-王天文-文須鳥-0704-2.jpg",
+      "alt": "40-王天文-文須鳥-0704-2",
       "featured": false
     },
     {
