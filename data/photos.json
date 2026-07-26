@@ -4,7 +4,7 @@
     "owner": "王天文",
     "intro": "記錄鳥類的眼神、動作與棲地，也保留每一次等待帶來的寧靜。"
   },
-  "updatedAt": "2026-07-26T14:36:35.353Z",
+  "updatedAt": "2026-07-26T14:41:53.655Z",
   "photos": [
     {
       "id": "5d1ebb5ea7655a",
@@ -46,20 +46,6 @@
       "year": "",
       "filename": "10月_鵂鶹.jpg",
       "alt": "10月_鵂鶹",
-      "featured": false
-    },
-    {
-      "id": "8feb319886b8e5",
-      "category": "raptors",
-      "src": "photos/raptors-8feb319886b8e5-1400.jpg",
-      "small": "photos/raptors-8feb319886b8e5-640.jpg",
-      "large": "photos/raptors-8feb319886b8e5-2400.jpg",
-      "title": "IMG_8617-2",
-      "species": "",
-      "location": "",
-      "year": "",
-      "filename": "IMG_8617-2.jpg",
-      "alt": "IMG_8617-2",
       "featured": false
     },
     {
@@ -368,6 +354,20 @@
       "year": "",
       "filename": "SJY05120-cloud-wonder-1x.jpg",
       "alt": "SJY05120-cloud-wonder-1x",
+      "featured": false
+    },
+    {
+      "id": "0ea952fc786ae4",
+      "category": "raptors",
+      "src": "photos/raptors-0ea952fc786ae4-1400.jpg",
+      "small": "photos/raptors-0ea952fc786ae4-640.jpg",
+      "large": "photos/raptors-0ea952fc786ae4-2400.jpg",
+      "title": "IMG_8617-2_1",
+      "species": "",
+      "location": "",
+      "year": "",
+      "filename": "IMG_8617-2_1.jpg",
+      "alt": "IMG_8617-2_1",
       "featured": false
     },
     {
