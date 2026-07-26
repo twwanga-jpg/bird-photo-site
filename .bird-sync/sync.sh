@@ -43,6 +43,11 @@ make_variant() {
   local jpeg_name="${stem}-${size}.jpg"
   local jpeg_path="$SITE_ROOT/photos/$jpeg_name"
 
+  # 已存在但無法讀取的縮圖可能是複製尚未完成時留下，先刪除再重建。
+  if [ -f "$jpeg_path" ] && ! /usr/bin/sips -g pixelWidth "$jpeg_path" >/dev/null 2>&1; then
+    /bin/rm -f "$jpeg_path"
+  fi
+
   if [ ! -f "$jpeg_path" ]; then
     if ! /usr/bin/sips -s format jpeg -s formatOptions "$quality" -Z "$size" "$source" --out "$jpeg_path" >/dev/null 2>&1; then
       local fallback_name="${stem}-${size}.${fallback_extension}"
@@ -95,7 +100,7 @@ while IFS= read -r -d '' file; do
   large_name="$(make_variant "$file" "$stem" 2400 86 "$extension")"
   printf '%s\n%s\n%s\n' "$small_name" "$medium_name" "$large_name" >> "$DESIRED"
   printf '%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n' "$id" "$category" "photos/$small_name" "photos/$medium_name" "photos/$large_name" "$title" "$species" "$location" "$year" "$filename" >> "$MANIFEST"
-done < <(/usr/bin/find "$PHOTO_ROOT" -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' -o -iname '*.webp' \) -print0)
+done < <(/usr/bin/find "$PHOTO_ROOT" -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' -o -iname '*.webp' -o -iname '*.heic' -o -iname '*.heif' -o -iname '*.tif' -o -iname '*.tiff' \) -print0)
 
 # 清除已從 BirdWebPublish 移除或換版的網站副本，原始照片不受影響。
 while IFS= read -r -d '' generated; do
